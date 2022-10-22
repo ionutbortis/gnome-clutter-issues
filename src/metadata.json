@@ -1,0 +1,6 @@
+{
+  "name": "Clutter Effects Issues",
+  "description": "Very simple extension in order to reproduce Clutter Effects issues on some graphics cards",
+  "uuid": "clutter-issues@ionutbortis.gmail.com",
+  "shell-version": ["3.36", "40", "41", "42", "43"]
+}
