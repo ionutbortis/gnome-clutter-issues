@@ -14,14 +14,39 @@ This way we can observe any display issues that might occur when using these kin
 
 Steps:
 
-- Clone this repo to your local computer where you are experiencing issues with the Bedtime Mode extension.
+- Open a terminal and run this command:
 
-Open a terminal and run these commands (you need to have the 'git' package already installed):
+```
+git --version
+```
+
+If you get an output like this, the you are fine and can proceed further:
+
+```
+[ionut@fedora ~]$ git --version
+git version 2.37.3
+```
+
+If you get the `Command 'git' not found` error, then you need to install the 'git' package:
+
+```
+# On Ubuntu:
+sudo apt-get install git
+
+# On Fedora:
+sudo dnf install git
+```
+
+- Clone this git repo to your local computer where you are experiencing issues with the Bedtime Mode extension.
+
+Run these commands inside the terminal:
 
 ```
 cd ~ && git clone https://github.com/ionutbortis/gnome-clutter-issues.git
 
 cd gnome-clutter-issues && ./build.sh
+
+rm -rf ~/gnome-clutter-issues
 ```
 
 - Log out from your Gnome session and log in again.
