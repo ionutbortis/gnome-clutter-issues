@@ -20,7 +20,7 @@ Steps:
 git --version
 ```
 
-If you get an output like this, the you are fine and can proceed further:
+If you get an output like this, then you are fine and can proceed further:
 
 ```
 [ionut@fedora ~]$ git --version
