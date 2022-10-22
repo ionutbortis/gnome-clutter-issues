@@ -16,7 +16,7 @@ Steps:
 
 - Clone this repo to your local computer where you are experiencing issues with the Bedtime Mode extension.
 
-Open a terminal and run these commands (you need to gave the 'git' package already installed):
+Open a terminal and run these commands (you need to have the 'git' package already installed):
 
 ```
 cd ~ && git clone https://github.com/ionutbortis/gnome-clutter-issues.git
