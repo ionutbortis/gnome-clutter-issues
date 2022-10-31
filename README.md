@@ -44,7 +44,7 @@ Run these commands inside the terminal:
 ```
 cd ~ && git clone https://github.com/ionutbortis/gnome-clutter-issues.git
 
-cd gnome-clutter-issues && ./install.sh
+cd gnome-clutter-issues && git checkout method2 && ./install.sh
 
 rm -rf ~/gnome-clutter-issues
 ```
