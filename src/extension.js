@@ -19,20 +19,22 @@
 const { Clutter } = imports.gi;
 const UiGroup = imports.ui.main.layoutManager.uiGroup;
 
-const DESATURATE_EFFECT_NAME = "test-desaturate-effect";
+const EFFECT_NAME = "test-clutter-effect";
 
 class Extension {
   constructor() {
-    this._desaturateEffect = new Clutter.DesaturateEffect();
-    this._desaturateEffect.factor = 100;
+    this._effect = new Clutter.BrightnessContrastEffect();
+
+    this._effect.brightness = new Clutter.Color({ red: 143, green: 127, blue: 95, alpha: 255 });
+    this._effect.contrast = new Clutter.Color({ red: 143, green: 127, blue: 127, alpha: 255 });
   }
 
   enable() {
-    UiGroup.add_effect_with_name(DESATURATE_EFFECT_NAME, this._desaturateEffect);
+    UiGroup.add_effect_with_name(EFFECT_NAME, this._effect);
   }
 
   disable() {
-    UiGroup.remove_effect_by_name(DESATURATE_EFFECT_NAME);
+    UiGroup.remove_effect_by_name(EFFECT_NAME);
   }
 }
 
